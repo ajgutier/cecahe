@@ -1,39 +1,41 @@
 /** Media Queries **/
+@use "variables" as v;
 @mixin telefono {
-  @media (min-width: #{$telefono}) {
+  @media (min-width: #{v.$telefono}) {
     @content;
   }
 }
 
 @mixin tablet {
-  @media (min-width: #{$tablet}) {
+  @media (min-width: #{v.$tablet}) {
     @content;
   }
 }
 
 @mixin desktop {
-  @media (min-width: #{$desktop}) {
+  @media (min-width: #{v.$desktop}) {
     @content;
   }
 }
-@mixin grid($columnas, $espaciado) {
+/* @mixin grid($columnas, v.$espaciado) {
   display: grid;
   gap: $espaciado;
-  grid-template-columns: repeat($columnas, 1fr);
-}
+  grid-template-columns: repeat(v.$columnas, 1fr);
+} */
 
-@mixin boton($bgColor, $display) {
-  background-color: $bgColor;
-  color: $blanco;
-  font-weight: $bold;
+/* @mixin boton(v.$morado, v.$display) {
+  background-color: $morado;
+  color: v.$blanco;
+  font-weight: v.$bold;
   text-decoration: none;
   padding: 1rem 3rem;
   text-align: center;
-  margin-top: $separacion / 2;
-  display: $display;
+  margin-top: v.$separacion / 2;
+  display: v.$display;
   border: none;
   &:hover {
-    background-color: darken($bgColor, 5);
+    background-color: darken(v.$morado, 5);
     cursor: pointer;
   }
 }
+ */

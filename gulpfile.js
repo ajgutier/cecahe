@@ -42,14 +42,14 @@ function javascript() {
 function imagenes() {
     return src(paths.imagenes)
         .pipe(cache(imagemin({ optimizationLevel: 3 })))
-        .pipe(dest('/img'))
+        .pipe(dest('img'))
         /* .pipe(notify('Imagen Completada' )); */
 }
 
 function versionWebp() {
     return src(paths.imagenes)
         .pipe(webp())
-        .pipe(dest('/img'))
+        .pipe(dest('img'))
         /* .pipe(notify({ message: 'Imagen Completada' })); */
 }
 

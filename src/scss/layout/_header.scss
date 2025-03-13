@@ -1,39 +1,100 @@
-.no-webp .inicio {
-  background-image: url(../img/header.jpg);
-}
-.webp .inicio {
-  background-image: url(../img/header.webp);
-}
-.header {
-  background-color: $grisOscuro;
-  padding: 1rem 0rem 3rem 0rem;
-
-  &.inicio {
-    background-position: center center;
-    background-size: cover;
-
-    @include tablet {
-      min-height: 70rem;
-    }
-
-    .contenido-inicio {
-      @include tablet {
-        min-height: 70rem;
-      }
-    }
-  }
-}
-
-.contenido-header {
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+.barra-navegacion {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+}
 
-  h1 {
-    text-align: left;
-    color: $blanco;
-    font-weight: $bold;
-    line-height: 2;
-    max-width: 60rem;
+@include m.desktop {
+  .barra-navegacion {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
   }
+  .slogan {
+    display: block;
+    text-align: right;
+    padding-right: 10%;
+    grid-column-start: 1;
+    grid-column-start: 2;
+    line-height: 0;
+  }
+}
+
+.barra-navegacion .logo img {
+  width: 30rem;
+}
+@include m.desktop {
+  .barra-navegacion {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      flex: 1;
+      padding-left: 5%;
+    }
+    .contenedor-menu {
+      flex: 2;
+    }
+  }
+  .barra-navegacion .logo img {
+    width: 30rem;
+  }
+}
+
+.menu-principal {
+  /* display: none; */
+}
+
+.menu-principal .menu a {
+  color: v.$morado;
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: block;
+  text-align: center;
+  padding: 0.5rem 2rem;
+}
+.slogan {
+  color: v.$morado;
+  font-size: 2rem;
+  font-weight: 600;
+}
+@include m.desktop {
+  .menu-principal {
+    display: block;
+  }
+  .menu-principal .current_page_item > a {
+    color: v.$gris;
+  }
+  .menu-principal .menu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end;
+    gap: 2rem;
+  }
+  .menu-principal .menu a {
+    padding: 0;
+  }
+
+  .contenedor-menu {
+    display: grid;
+    grid-template-columns: 10fr 1fr;
+
+    .menu-principal,
+    .menu-social {
+      border-bottom: 3px solid v.$gris;
+      padding-top: 0;
+    }
+
+    .slogan {
+      grid-column-start: 1;
+      grid-column-end: 2;
+    }
+  }
+}
+
+.menu-social {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
 }
