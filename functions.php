@@ -1,4 +1,10 @@
 <?php
+function cecahe_setup() {
+    /* Imagenes Destacadas */
+    add_theme_support( 'post-thumbnails' );
+}
+
+add_action( 'after_setup_theme', 'cecahe_setup' );
 
 function cecahe_menus() {
     register_nav_menus(array(
@@ -29,3 +35,9 @@ function cecahe_scripts_styles() {
     wp_enqueue_style( 'style', get_stylesheet_uri(), array('normalize'), '1.0.0' );
 }
 add_action( 'wp_enqueue_scripts', 'cecahe_scripts_styles' );
+
+function cecahe_imagen_fondo() {
+    
+}
+
+add_action( 'init', 'cecahe_imagen_fondo' );

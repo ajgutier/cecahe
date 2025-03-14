@@ -1,0 +1,107 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+.footer {
+  background-color: v.$morado;
+  padding: 3rem 0;
+}
+
+.copyright {
+  text-align: end;
+  color: #ffffff;
+}
+
+.contenedor-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+@include m.desktop {
+  .contenedor-footer {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 10rem;
+  }
+}
+.slogan-footer {
+  border-bottom: 3px solid v.$gris;
+}
+@include m.desktop {
+  .slogan-footer {
+    text-align: right;
+  }
+}
+.contenido-contacto {
+  margin: 3rem 0;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  p {
+    text-align: center;
+    color: #ffffff;
+    font-size: 2.4rem;
+    padding: 0;
+    margin: 0;
+  }
+}
+@include m.desktop {
+  .contenido-contacto p {
+    text-align: right;
+    font-size: 3rem;
+  }
+}
+@include m.desktop {
+  .info-contacto {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+.info-contacto {
+  margin-top: 3rem;
+}
+.info-contacto p {
+  text-align: justify;
+  line-height: normal;
+  font-size: 2rem;
+}
+
+.info-contacto div:nth-last-child(1) {
+  display: flex;
+  justify-content: center;
+  padding: 3rem 0;
+}
+
+@include m.desktop {
+  .info-contacto {
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+.info-contacto svg {
+  width: 1.7rem;
+  height: 1.7rem;
+}
+.info-contacto div .whatsapp {
+  width: 10rem;
+}
+@include m.desktop {
+  .info-contacto div:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .info-contacto div .whatsapp {
+    width: 10rem;
+  }
+}
+
+.copyright {
+  font-size: 1.5rem;
+  a {
+    color: #ffffff;
+  }
+}
+@include m.desktop {
+  .copyright {
+    font-size: 1.7rem;
+  }
+}
