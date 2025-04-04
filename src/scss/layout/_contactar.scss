@@ -1,0 +1,8 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+.header-contacto {
+  background-image: url("img/fondo_contacto.webp") !important;
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

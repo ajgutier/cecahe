@@ -9,7 +9,8 @@ add_action( 'after_setup_theme', 'cecahe_setup' );
 function cecahe_menus() {
     register_nav_menus(array(
         'menu-principal' => __( 'Menu Principal', 'cecahe' ),
-        'menu-social' => __( 'Menu Social', 'cecahe' )
+        'menu-social' => __( 'Menu Social', 'cecahe' ),
+        'menu-contacto' => __( 'Menu Contacto', 'cecahe' )
     ));
 }
 
