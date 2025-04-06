@@ -1,0 +1,24 @@
+@use "../base/variables" as v;
+@use "../base/mixins" as m;
+.conocer .contenedor {
+  display: grid;
+}
+.conocer .contenedor p {
+  text-align: justify;
+}
+@include m.desktop {
+  .conocer .contenedor {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  .conocer .contenedor p {
+    padding: 0;
+    line-height: normal;
+  }
+}
+.logotipos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  padding: 2rem 0;
+}

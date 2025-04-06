@@ -34,6 +34,8 @@ function cecahe_scripts_styles() {
 
     // Stylesheet
     wp_enqueue_style( 'style', get_stylesheet_uri(), array('normalize'), '1.0.0' );
+
+    wp_enqueue_script('scripts', get_template_directory_uri() . '/js/bundle.min.js', array(), '1.0.0', true);
 }
 add_action( 'wp_enqueue_scripts', 'cecahe_scripts_styles' );
 
@@ -42,3 +44,12 @@ function cecahe_imagen_fondo() {
 }
 
 add_action( 'init', 'cecahe_imagen_fondo' );
+
+add_filter('nav_menu_link_attributes', 'forzar_descarga_enlace', 10, 3);
+function forzar_descarga_enlace($atts, $item, $args) {
+    // Detecta si el enlace es el del PDF
+    if ($atts['href'] === 'https://cecahe.com/wp-content/uploads/2025/04/AVISO-DE-PRIVACIDAD-CECAHE.pdf') {
+        $atts['download'] = ''; // Agrega el atributo download
+    }
+    return $atts;
+}

@@ -93,7 +93,8 @@
                         Ciudad de México<br>Aviso de Privacidad.</p>
                 </div>
                 <div>
-                    <a href="#" target="_blank" rel="noopener noreferrer"><img class="whatsapp"
+                    <a href="https://wa.me/525543572736?text=Vengo%20de%20la%20p%C3%A1gina%20web" target="_blank"
+                        rel="noopener noreferrer"><img class="whatsapp"
                             src="<?php echo get_template_directory_uri(); ?>/img/whatsapp.webp" alt="logotipo"></a>
                 </div>
             </div><!-- .info-contacto -->

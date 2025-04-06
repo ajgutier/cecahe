@@ -1,8 +1,193 @@
 @use "../base/variables" as v;
 @use "../base/mixins" as m;
-.header-contacto {
-  background-image: url("img/fondo_contacto.webp") !important;
+.contacto {
+  background-image: url("img/fondo_contacto.webp");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+.header-contacto .barra-navegacion {
+  background-color: rgba($color: #000, $alpha: 0);
+}
+.header-contacto .menu-contacto a {
+  color: #ffffff;
+}
+
+.header-contacto .menu-principal ul li {
+  display: none;
+}
+.header-contacto .menu-principal ul li:last-child {
+  display: flex;
+}
+
+.header-contacto .menu-principal ul li:nth-child(1) {
+  display: flex;
+}
+
+.header-contacto .menu-principal a {
+  color: #ffffff;
+}
+.header-contacto .slogan {
+  color: #ffffff;
+}
+.header-contacto .menu-social .menu svg path {
+  fill: #ffffff !important;
+  color: #ffffff !important;
+}
+@include m.desktop {
+  .contacto section .contenedor {
+    display: grid;
+    grid-template-columns: 7fr 10fr;
+    gap: 5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20rem 0;
+  }
+  /* .contacto section .contenedor div {
+    padding-top: 10rem 0;
+  } */
+}
+.contacto p {
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+}
+.contacto a {
+  color: #ffffff;
+  font-weight: bold;
+}
+.contacto form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+/* @include m.desktop {
+  .contacto form {
+    padding-top: 10rem;
+  }
+} */
+.contacto form label {
+  width: 100%;
+  text-transform: uppercase;
+}
+@include m.desktop {
+  .contacto form label p {
+    padding: 0;
+    line-height: 1;
+  }
+}
+.contacto input {
+  width: 100%;
+}
+.contacto textarea {
+  width: 100%;
+}
+.wpcf7-submit {
+  font-weight: bold;
+  width: 100%;
+  background-color: v.$morado;
+  border-radius: 25px;
+  border: none;
+  padding: 1rem 0;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.contacto h3 {
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 4rem;
+  line-height: normal;
+}
+
+@include m.desktop {
+  .contacto h3 {
+    font-size: 5rem;
+    line-height: 1;
+    text-align: justify;
+  }
+}
+
+@include m.desktop {
+  .contacto form p label {
+    display: flex;
+    justify-content: space-between;
+  }
+  .wpcf7-submit {
+    width: 30% !important;
+  }
+  .formulario p:nth-child(6) {
+    text-align: right;
+    font-size: 1.8rem;
+    line-height: 1.5;
+  }
+  .formulario p:nth-child(7) {
+    display: flex;
+    justify-content: right;
+  }
+}
+.contenido-contacto p {
+  font-size: 2rem;
+  text-align: justify;
+}
+.contenido-contacto h3 {
+  font-size: 3rem;
+}
+@include m.desktop {
+  .contacto .contenido-contacto {
+    p {
+      font-size: 4rem;
+      line-height: normal;
+      text-align: justify;
+    }
+    h3 {
+      font-size: 5rem;
+    }
+  }
+}
+.contacto .iconos-contacto {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 5rem;
+}
+
+@include m.desktop {
+  .contacto .iconos-contacto {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    gap: 5rem;
+  }
+}
+.contacto .iconos-contacto a {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.contacto .iconos-contacto a img {
+  width: 20rem;
+}
+.contacto .iconos-contacto .info-contacto div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+@include m.desktop {
+  .contacto .iconos-contacto .info-contacto div {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+.iconos-contacto .info-contacto div p {
+  font-size: 3rem;
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+.contacto .iconos-contacto .whatsapp {
+  width: 10rem;
+  height: auto;
+  object-fit: contain;
 }

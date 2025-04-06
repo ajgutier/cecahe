@@ -6,15 +6,20 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
-.home .section .contenedor {
+@include m.desktop {
+  .main .pantalla {
+    height: 100vh;
+  }
+}
+.section .contenedor {
   padding-top: 5rem;
+  padding-top: 15rem;
 }
 
 @include m.desktop {
   .home .section .contenedor {
     display: grid;
     grid-template-columns: 2fr 5fr;
-    padding-top: 15rem;
   }
 }
 .home .box:nth-child(1) {
@@ -52,7 +57,15 @@
     width: 100%;
   }
 }
-.home h2 {
+.titulos h2 {
+  color: v.$morado;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: justify;
+  line-height: 1;
+}
+
+h2.titulos {
   color: v.$morado;
   font-size: 2rem;
   font-weight: bold;
@@ -60,12 +73,29 @@
   line-height: 1;
 }
 @include m.desktop {
-  .home h2 {
+  .titulos h2 {
     font-size: 3.5rem;
     padding-bottom: 0;
     margin-bottom: 0;
   }
 }
+
+.section-3 .box-3 h2 {
+  color: v.$morado;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: justify;
+  line-height: 1;
+}
+
+@include m.desktop {
+  .section-3 .box-3 h2 {
+    font-size: 3.5rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+}
+
 .home p {
   line-height: 1.2;
   text-align: justify;

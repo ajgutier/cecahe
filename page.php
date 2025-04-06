@@ -1,8 +1,8 @@
 <?php get_header(); ?>
 
 <main class="main home">
-    <section class="section">
-        <div class="contenedor">
+    <section class="section titulos">
+        <div class="pantalla contenedor">
             <div class="box">
                 <img class="page_home" src="<?php echo get_template_directory_uri(); ?>/img/page_home.webp"
                     alt="El lado humano de los negocios">
@@ -12,41 +12,51 @@
                     de autodescubrimiento y crecimiento, donde cada paso
                     nos acerca a nuestro máximo potencial.
                 </h2>
+                <div>
+                    <p>
+                        Nos complace recibirte en nuestro sitio web, donde encontrarás toda la información sobre
+                        nuestros
+                        programas de capacitación y certificación. Desde nuestra fundación, nos hemos dedicado a ofrecer
+                        instrucción de alta calidad con un enfoque integral que combina el desarrollo profesional y
+                        personal.
+                    </p>
+                    <p>
+                        A nuestros visitantes les invitamos a explora nuestra diversa oferta educativa y descubre cómo
+                        podemos ayudarte a alcanzar tus metas . En CECAHE, valoramos la responsabilidad, la ética, el
+                        respeto y la lealtad, nos esforzamos por crear un entorno de aprendizaje inclusivo y
+                        enriquecedor.
+                    </p>
+                    <p>
+                        Con nuestros clientes y estudiantes nos sentimos orgullosos de acompañarles en su camino hacia
+                        el
+                        éxito. Aquí encontrarán recursos, apoyo y una comunidad comprometida con su crecimiento. Tu
+                        dedicación y esfuerzo son la clave para transformar tu futuro, y estamos aquí para apoyarte en
+                        cada
+                        paso del camino.
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        Agradecemos profundamente a nuestros capacitadores por su compromiso y pasión por la enseñanza.
+                        Su
+                        experiencia y conocimiento son fundamentales para brindar una educación de excelencia. Juntos,
+                        estamos formando a los líderes del mañana y contribuyendo positivamente a la sociedad.
+                    </p>
+                    <p>
+                        En CECAHE, creemos en la importancia de una educación integral que no sólo capacite personas
+                        competentes, sino también seres humanos éticos y responsables. Te invitamos a ser parte de
+                        nuestra
+                        comunidad y a crecer con nosotros.
+                    </p>
+                    <p>
+                        ¡Bienvenidos a CECAHE, donde tu futuro comienza hoy!
+                    </p>
+                    <p>
+                        <span>L.P. Carmen Martínez.<br>
+                            Directora General.</span>
+                    </p>
+                </div>
 
-                <p>
-                    Nos complace recibirte en nuestro sitio web, donde encontrarás toda la información sobre nuestros
-                    programas de capacitación y certificación. Desde nuestra fundación, nos hemos dedicado a ofrecer
-                    instrucción de alta calidad con un enfoque integral que combina el desarrollo profesional y
-                    personal.
-                    Agradecemos profundamente a nuestros capacitadores
-                </p>
-                <p>
-                    por su compromiso y pasión por la enseñanza. Su experiencia y conocimiento son fundamentales para
-                    brindar
-                    una educación de excelencia. Juntos, estamos formando a los líderes del mañana y contribuyendo
-                    positivamente a la sociedad.
-                </p>
-                <p>
-                    <span>A</span>&nbsp;nuestros visitantes les invitamos a explora nuestra diversa oferta educativa y
-                    descubre cómo podemos ayudarte a alcanzar tus metas .<br>
-                    En <span>CECAHE</span>, valoramos la responsabilidad, la ética, el respeto y la lealtad, nos
-                    esforzamos por crear un entorno de aprendizaje inclusivo y enriquecedor.<br>
-                    Con nuestros clientes y estudiantes nos sentimos orgullosos de acompañarles en su camino hacia el
-                    éxito. Aquí encontrarán recursos, apoyo y una comunidad comprometida con su crecimiento. Tu
-                    dedicación y esfuerzo son la clave para transformar tu futuro, y estamos aquí para apoyarte en cada
-                    paso del camino.
-                </p>
-                <p>
-                    En <span>CECAHE</span>, creemos en la importancia de una educación integral que no sólo capacite
-                    personas
-                    competentes, sino también seres humanos éticos y responsables. Te invitamos a ser parte de nuestra
-                    comunidad y a crecer con nosotros.<br><br>
-
-
-                    ¡Bienvenidos a CECAHE, donde tu futuro comienza hoy!<br><br>
-                    <span>L.P. Carmen Martínez.</span><br>
-                    <span>Directora General.</span>
-                </p>
 
             </div><!-- .box -->
         </div><!-- .contenedor -->
