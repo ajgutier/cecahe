@@ -90,7 +90,12 @@
                             </g>
                         </svg>
 
-                        Ciudad de México<br>Aviso de Privacidad.</p>
+                        Ciudad de México</p>
+                    <a class="aviso_footer"
+                        href="https://cecahe.com/wp-content/uploads/2025/04/AVISO-DE-PRIVACIDAD-CECAHE.pdf"
+                        download="aviso-de-privacidad-cecahe.pdf" target="_blank" rel="noopener noreferrer">
+                        Aviso de Privacidad
+                    </a>
                 </div>
                 <div>
                     <a href="https://wa.me/525543572736?text=Vengo%20de%20la%20p%C3%A1gina%20web" target="_blank"
@@ -102,9 +107,10 @@
     </div>
     <p class="copyright contenedor">Todos los Derechos Reservados, Centro de Capacitación Humanista y Empresarial,
         Copyright ©
-        <?php echo date('Y');?>| Desarrollado por <a href="#" target="_blank" rel="noopener noreferrer"><strong>Creative
-                Factory MX</strong></p></a>
-    <?php wp_footer(); ?>
+        <?php echo date('Y');?>| Desarrollado por <a href="https://creativefactory.com.mx" target="_blank"
+            rel="noopener noreferrer"><strong>Creative
+                Factory MX</strong></a>
+        <?php wp_footer(); ?>
 </footer>
 
 </body>
